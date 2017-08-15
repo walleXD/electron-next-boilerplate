@@ -1,0 +1,39 @@
+{
+  "name": "electron-next-skeleton",
+  "productName": "ElectronNext",
+  "version": "1.0.0",
+  "main": "main/index.js",
+  "license": "MIT",
+  "repository": "leo/electron-next-skeleton",
+  "scripts": {
+    "dev": "nodemon --watch main --exec electron .",
+    "start": "electron .",
+    "build": "next build renderer && next export renderer",
+    "dist": "npm run build && build --dir"
+  },
+  "@std/esm": {
+    "esm": "js"
+  },
+  "build": {
+    "files": [
+      "**/*",
+      "!renderer",
+      "renderer/out"
+    ]
+  },
+  "devDependencies": {
+    "backpack-core": "^0.4.2",
+    "electron": "1.7.5",
+    "electron-builder": "19.20.1",
+    "next": "3.0.3",
+    "nodemon": "^1.11.0",
+    "react": "15.6.1",
+    "react-dom": "15.6.1"
+  },
+  "dependencies": {
+    "@std/esm": "^0.2.2",
+    "app-root-path": "2.0.1",
+    "electron-is-dev": "0.3.0",
+    "electron-next": "3.1.1"
+  }
+}

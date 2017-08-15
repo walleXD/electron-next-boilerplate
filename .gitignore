@@ -1,0 +1,16 @@
+# build output
+dist
+renderer/.next
+renderer/out
+
+# dependencies
+node_modules
+
+# logs
+npm-debug.log
+
+# esm
+.esm-cache
+
+# macOS cache files
+.DS_Store
